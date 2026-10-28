@@ -17,4 +17,23 @@ public class Juego {
         LicenciasDisponibles = licenciasDisponibles;
         LicenciasVendidas=0;
     }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setCategoria(String categoria) {
+        if(nombre !=null && !nombre.trim().isEmpty())
+            this.categoria = categoria;
+    }
+
+    public void setMemoria(int memoria) {
+        if (memoria > 0)
+          this.memoria = memoria;
+    }
+
+    public void setPrecio(double precio) {
+        this.precio = precio;
+    }
+
 }
